@@ -300,6 +300,7 @@ HIGHLIGHTS
 .highlight__subtitle {
     font-size: 24px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 #highlights::after {
@@ -421,6 +422,36 @@ footer {
     padding: 0 20px;
 }
 
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .header__description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .book {
+        width: 50%;
+    }
+
+    .row {
+        max-width: 600px;
+    }
+}
+
+
+
 @media (max-width: 578px) {
     .nav__links {
         display: none;
@@ -428,6 +459,18 @@ footer {
 
     .btn__menu {
         display: block;
+    }
+
+    .highlight__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .highlight {
+        width: 100%;
+    }
+
+    .highlight:not(:last-child) {
+        margin-bottom: 24px;
     }
 }
 
